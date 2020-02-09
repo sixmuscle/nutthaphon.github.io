@@ -1,0 +1,262 @@
+body {
+    font-family: Prompt, sans-serif;
+    background-image: url(../images/bg.jpg)
+}
+
+.btn{
+    border-radius: 1px;
+}
+
+.form-control{
+    border-radius: 1px;
+    background: rgba(255,255,255,0.7);
+    border-color: rgb(177, 177, 177); 
+}
+
+.content-section p {
+    margin-bottom: 2px;
+}
+
+.color-sky {
+    color: #0d9cfc;
+}
+
+.btn-top {
+    font-size: 40px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    color: #48b5fd;
+}
+
+.btn-top:hover {
+    color: #42aff8
+}
+
+article {
+    padding-top: 5px
+}
+
+.bg-custom {
+    background: rgba(255, 255, 255, .404)
+}
+
+.navbar img {
+    top: 0;
+    position: absolute;
+    width: 70px
+}
+
+.navbar-nav .nav-item {
+    font-size: 20px;
+    padding-left: 15px
+}
+
+.navbar .nav-link {
+    transition: transform .5s ease
+}
+
+.navbar .nav-link:hover {
+    transform: translateY(5px)
+}
+
+.block-dark {
+    border-radius: 2px;
+    background: rgba(0, 0, 0, .5);
+    box-shadow: .3px .5px 1px #000
+}
+
+.tabs-product {
+    background: rgba(255, 255, 255, .3)
+}
+
+#tabs-product .nav-link {
+    cursor: pointer;
+    border: 1px solid #999
+}
+
+#tabs-product .nav-link:hover {
+    text-shadow: .1px .1px 2px #787878
+}
+
+#tabs-product .active {
+    background: rgba(255, 255, 255, .6);
+    border-block-end-color: rgba(153, 153, 153, .2)
+}
+
+.zoom {
+    height: 100%;
+    overflow: hidden
+}
+
+.zoom:hover {
+    box-shadow: 2px 1px 5px #575757
+}
+
+.zoom img {
+    cursor: pointer;
+    transition: transform .5s ease
+}
+
+.zoom:hover img {
+    transform: scale(1.2)
+}
+
+.zoom-n-rotate img {
+    transition: transform .5s ease-in-out;
+    cursor: pointer
+}
+
+.zoom-n-rotate:hover img {
+    transform: scale(.9) rotate(25deg);
+    box-shadow: 3px 2px 5px #575757
+}
+
+.tz-gallery .card {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.tz-gallery .card .content-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.tz-gallery .card:hover .content-overlay {
+    opacity: 1;
+}
+
+.content-image {
+    width: 100%;
+}
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.tz-gallery .card:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.content-details h3 {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.content-details p {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.fadeIn-bottom {
+    top: 80%;
+}
+
+.fadeIn-top {
+    top: 20%;
+}
+
+.fadeIn-left {
+    left: 20%;
+}
+
+.fadeIn-right {
+    left: 80%;
+}
+
+footer {
+    background: #4d4d4de0;
+    font-size: 14px
+}
+
+footer strong {
+    color: #65c0fd
+}
+
+footer p {
+    margin: 1px;
+    color: #ddd
+}
+
+footer a {
+    color: #fff
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+/* Small devices (landscape phones, 544px and up) */
+
+@media (min-width: 300px) {
+    .content-section h2 {
+        font-size: 20px;
+    }
+    .content-section {
+        font-size: 12px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .content-section h2 {
+        font-size: 22px;
+    }
+    .content-section {
+        font-size: 14px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .content-section h2 {
+        font-size: 24px;
+    }
+    .content-section {
+        font-size: 16px;
+    }
+    /* Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+        .content-section h2 {
+            font-size: 26px;
+        }
+        .content-section {
+            font-size: 18px;
+        }
+    }
+}
